@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #7eacf3;
+            background-image: linear-gradient(62deg, #7eacf3 0%, #E0C3FC 100%);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box{
+            background-color: white;
+            width: 350px;
+            height: 600px;
+            border-radius: 20px;
+            /* padding: 20px; */
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #topImg{
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        #para{
+            font-size: 1.1rem;
+            padding-left: 40px;
+            padding-right: 40px;
+            text-align: center;
+            
+        }
+
+        .AmountBox{
+            width: 300px;
+            height: 50px;
+            background-color: #00DBDE;
+            background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 3px;
+        }
+
+        .AmountBox .leftBox img{
+            width: 40px;
+            height: 40px;
+        }
+
+        .leftBox{
+            /* width: fit-content; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        /* .rightBox{
+            align-items: center;
+        } */
+
+        #button{
+            width: 300px;
+            height: 50px;
+            border-radius: 5px;
+    
+            /* color: white;
+            text-shadow: 2px 2px 4px #000000; */
+
+            box-shadow: 8px 8px 10px grey;
+            color: white;
+            background-color: #0e1042;
+            background-image: linear-gradient(160deg, #0e1042 0%, #157278 100%);
+        }
+
+        #cancel{
+            text-decoration: none;
+            color: black;
+        }
+
+        @media (max-width:350px) {
+            #button{
+                width: 200px
+            }
+        }
+
+        @media (max-width:350px) {
+            .AmountBox{
+                width: 200px;
+                height: 150px;
+                flex-direction: column;
+                text-align: center;
+            }
+            .leftBox{
+                display: flex;
+                flex-direction:column;
+                text-align: center;
+            }
+        } 
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+
+            <img id="topImg" src="https://tse4.mm.bing.net/th?id=OIP.tWKFRELLuNGLg5j-mdJ-NQHaDy&pid=Api&P=0&h=180" alt="image"/>
+
+            <h2>Order Summary</h2>
+
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae magnam esse, numquam obcaecati nisi et, rerum laborum iusto itaque!</p>
+
+            <div class="AmountBox">
+
+                <div class="leftBox">
+                    <div class="imgBox">
+                        <img src="https://tse1.mm.bing.net/th?id=OIP.JEUUlie4OwIpve6R9KlDmAHaHa&pid=Api&rs=1&c=1&qlt=95&w=113&h=113" alt="music"/>
+                    </div>
+
+                    <div id="textAmountBox">
+                        <p>Amount</p>
+                        <p>$99.9/year</p>
+                    </div>
+                    
+                </div>
+                
+                <div class="rightBox">
+                    <a href="xyz.com">Change</a>
+                </div>
+                
+            </div>
+
+            <button id="button">
+                Proceed to Payment
+            </button>
+
+            <h2>
+                <a id="cancel" href="cancel.com">Cancel Order</a>
+            </h2>
+
+        </div>
+    </div>
+</body>
+</html>
