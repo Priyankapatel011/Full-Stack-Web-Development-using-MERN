@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            display: grid;
+            gap: 1rem;
+            background-color: yellowgreen;
+            height: 100%;
+            width: 100%;
+            padding: 4rem;
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: repeat(auto-fit, minmax(350px,400px));
+        }
+        item {
+            border: 3px solid black;
+            background-color: rgb(82, 76, 77); 
+            color: white;
+            padding: 1rem;
+
+        }
+
+    </style>
+    <title>Responsive Grid Designs</title>
+</head>
+<body>
+    <div class="container">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+  
+    </div>
+    
+</body>
+</html>
